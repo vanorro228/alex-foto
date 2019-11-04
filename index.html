@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher|Oswald|Neucha|Playfair+Display&display=swap" rel="stylesheet"> 
+        <title>Фотограф Александр Прокопенко</title>
+        <meta name="description" content="Интерактивное руководство по началу работы в Brackets.">
+        <link rel="stylesheet" href="foto.css">
+          <link rel="stylesheet" href="animate.css">
+        <script src="wow.min.js"></script>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script>
+         new WOW().init(); 
+$(document).ready(function(){ 
+$("#menu").on("click","a", function (event) { 
+event.preventDefault(); 
+var id = $(this).attr('href'), 
+top = $(id).offset().top; 
+$('body,html').animate({scrollTop: top}, 1500); 
+}); 
+}); 
+</script>
+    </head>
+    <body>
+        <div class="kek">
+<div class="intro">
+<div class="container">
+   <h1 class="lol">Место для логотипа</h1>
+        <div class="slider">
+    <a class="item" href="#">
+        Начало
+        </a>
+         <a class="item" href="#about">
+       Обо мне
+        </a>
+         <a class="item" href='#'>
+        Портфолио
+        </a>
+         <a class="item" href='#'>
+       Расчёт стоимости
+        </a>
+         <a class="item" href='#'>
+        Блог
+        </a>
+            </div>
+    <div class="wow fadeInLeft">
+        <h1 class="name">Привет, я <br>Александр Прокопенко</h1>
+             <p class="ak">Я фотограф из Москвы</p>
+        </div>
+          <input type="button" value="Оставить заявку на фотосессию" id="link" class="send"/> 
+        </div>
+     <!--img src="insta.png">
+        <img src="vk.png"-->
+    </div>
+        <div class="next1 wow bounceInDown">
+           <div class="about">
+               <h1 id="about">Обо мне</h1>
+               <a><b>Привет! Спасибо, что зашли на мой персональный сайт! Меня зовут Александр Прокопенко, мне 19 лет и я профессионально занимаюсь фотографией уже 2 года. Я практикуюсь на такиех видах съёмки, как: портретная, детская, семейная, предметная, сюжетная. Профессионально владею программой Adobe Fotoshop.</b></a>
+               <h1>Что я делал?</h1>
+                </div>
+            <img src="sanya.jpg" class="sanya">
+             <div class="fotki">
+                   <a href="https://vk.com/public187880064?w=wall-187880064_14" height=90px> <img src=kek1.jpg class="predmet" ></a>
+                   <a href="https://vk.com/public187880064?w=wall-187880064_12"><img src="insta.png" class="predmet" ></a>
+                  <a href="https://vk.com/public187880064?w=wall-187880064_13"> <img src="vk.png"  class="predmet">
+                      </a>
+               </div>
+            <div class="fotki">
+                   <a href="https://vk.com/public187880064?w=wall-187880064_14"> Love story</a>
+                   <a href="https://vk.com/public187880064?w=wall-187880064_12">Детская фотосъёмка</a>
+                  <a href="https://vk.com/public187880064?w=wall-187880064_13">Сюжетная съёмка
+                      </a>
+               </div>
+            </div>
+              
+            </div>
+    </body>
+</html>
