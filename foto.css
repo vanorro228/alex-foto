@@ -100,6 +100,7 @@ text-align: justify;
     font-family: 'Neucha',cursive;
     color: #fff;
     text-decoration: none;
+	position: fixed;
 }
 .item{
     position: relative;
