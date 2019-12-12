@@ -21,6 +21,17 @@ top = $(id).offset().top;
 $('body,html').animate({scrollTop: top}, 1500); 
 }); 
 }); 
+            function jmak(){
+                alert("Всем привет!");
+            }
+            $(document).ready(function() {
+  $('a[href^="#"], a[href^="."]').not('.sf').click(function() {
+    var t = $(this).attr("href");
+    return 0 != $(t).length && $("html, body").animate({
+      scrollTop: $(t).offset().top
+    }, 1500), !1
+  })
+});
 </script>
     </head>
     <body>
@@ -44,12 +55,17 @@ $('body,html').animate({scrollTop: top}, 1500);
          <a class="item" href='#'>
         Блог
         </a>
-            </div>
+            </div> 
     <div class="wow fadeInLeft">
         <h1 class="name">Привет, я <br>Александр Прокопенко</h1>
              <p class="ak">Я фотограф из Москвы</p>
         </div>
-          <input type="button" value="Оставить заявку на фотосессию" id="link" class="send"/> 
+        <!--  <input type="button" value="" id="link" class="send" /> --><div class="send"><a href="#win1" rel="nofollow" class="sf"> Оставить заявку на фотосессию</a></div>
+    <div class="popup" id="win1"> <a class="zag">Введите Ваши данные, чтобы я смог связаться с вами ;)</a><br><br>
+      <a>Фамилия: <input type="text"></a>
+  <a class="close sf" title="Закрыть" href="#close"></a>
+</div>
+    
         </div>
      <!--img src="insta.png">
         <img src="vk.png"-->
@@ -58,7 +74,7 @@ $('body,html').animate({scrollTop: top}, 1500);
            <div class="about">
                <h1 id="about">Обо мне</h1>
                <a><b>Привет! Спасибо, что зашли на мой персональный сайт! Меня зовут Александр Прокопенко, мне 19 лет и я профессионально занимаюсь фотографией уже 2 года. Я практикуюсь на такиех видах съёмки, как: портретная, детская, семейная, предметная, сюжетная. Профессионально владею программой Adobe Fotoshop.</b></a>
-               <h1>Что я делал?</h1>
+               <h1>Что я делал? </h1>
                 </div>
             <img src="sanya.jpg" class="sanya">
              <div class="fotki">
@@ -66,7 +82,7 @@ $('body,html').animate({scrollTop: top}, 1500);
                    <a href="https://vk.com/public187880064?w=wall-187880064_12"><img src="insta.png" class="predmet" ></a>
                   <a href="https://vk.com/public187880064?w=wall-187880064_13"> <img src="vk.png"  class="predmet">
                       </a>
-               </div>
+</div>
             <div class="fotki">
                    <a href="https://vk.com/public187880064?w=wall-187880064_14"> Love story</a>
                    <a href="https://vk.com/public187880064?w=wall-187880064_12">Детская фотосъёмка</a>
