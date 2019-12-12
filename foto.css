@@ -245,5 +245,17 @@ text-align: justify;
 .sf:visited(
 color:black;)
 .zag{
-    
+}
+.field{
+  clear:both; 
+  text-align:right;
+    line-height:25px;
+}
+.win{
+    float: left;
+    padding-right:10px;
+}
+.main1
+{
+    float: left;
 }
