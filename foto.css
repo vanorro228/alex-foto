@@ -1,4 +1,11 @@
-a{text-decoration: none;}
+a{
+	text-decoration: none;
+	color:black;
+	font-weight:900;
+}
+p{
+	text-decoration: none;
+}
 body{
     height: 1820px;
     cursor: url("AppStarting.ani");
@@ -61,6 +68,7 @@ margin: 0 auto;}
    background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
     font-size: 18px;
     position: relative;
+	text-align:center;
 }
  .send:hover{
         background: linear-gradient(45deg, #EECFBA, #C5DDE8);
@@ -78,21 +86,39 @@ margin: 0 auto;}
 }
 .next1{
    width: 100%;
- height: 100vh;
     background-size: cover;
 }
-.about{
-  padding-left: 350px;
-  padding-top: 80px;
-    padding-right: 70px;
+.next2{
+   width: 100%;
+   padding:30px;
+   margin:0 auto;
+   background-size: cover;
+   text-align:center;
+   background:#4B77BE;
 }
+.about{
+	padding:10px;
+	box-sizing: border-box;
+}
+.img-slider{
+	width:50%;
+	margin:0 auto;
+}
+.img-slider img{
+	width:100%;
+}
+
 h1{
        font-family: 'Philosopher', sans-serif;
     color: #25274f;
 }
 a{
     font-family: 'Playfair Display', serif;
-text-align: justify;
+	text-align: justify;
+}
+p{
+    font-family: 'Playfair Display', serif;
+	text-align: justify;
 }
 .slider{
     padding-left: 720px;
@@ -225,13 +251,20 @@ text-align: justify;
   transform: rotate(360deg)
 }
 .sanya{
-     margin: -250px auto;
+	float:left;
+}
+.sanya img{
+	margin:0 20px 0 0;
     height: 550px;
 }
 .predmet{
     height:90px;
 }
-.fotki{padding-left: 350px;
+.fotki{
+	/**/
+	width:200px;
+	float:left;
+	text-align:center;
 }
 .fotki1{
     padding-left: 350px;
