@@ -94,7 +94,7 @@ margin: 0 auto;}
    margin:0 auto;
    background-size: cover;
    text-align:center;
-   background:#4B77BE;
+   background: linear-gradient(to top left, powderblue, pink);
 }
 .about{
 	padding:10px;
